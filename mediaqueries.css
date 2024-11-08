@@ -10,6 +10,9 @@
   .contact-info-upper-container{
     flex-wrap: wrap;
   }
+  .project-details-container {
+    grid-template-columns: repeat(3, 1fr); /* Creates three columns */
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -45,9 +48,16 @@
   .contact-info-upper-container{
     flex-wrap: wrap;
   }
-  
+  .project-details-container {
+    grid-template-columns: repeat(2, 1fr); /* Creates 1 columns */
+  }
 }
 
+@media screen and (max-width: 900px) {
+  .project-details-container {
+    grid-template-columns: repeat(1, 1fr); /* Creates 1 columns */
+  }
+}
 @media screen and (max-width: 500px) {
   
   #profile {
@@ -110,5 +120,8 @@
   #github-streak-0,
     #github-streak-4{
     width: 100%;
+  }
+  .project-details-container {
+    grid-template-columns: repeat(1, 1fr); /* Creates three columns */
   }
 }

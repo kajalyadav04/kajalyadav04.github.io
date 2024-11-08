@@ -306,7 +306,7 @@ a,
   box-shadow: 0px 0px 0px 0px var(--fade-black);
 }
 
-#socials-container, .btn-container-1 {
+#socials-container, .btn-container-1, .btn-container {
   gap: 1rem;
 }
 
@@ -564,49 +564,47 @@ footer {
   transform: none;
 }
 
-
-/* .form-container {
-  width: 50%;
-  margin: auto;
-  background-color: #fff;
-  border-radius: 2rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  text-align: center;
+.project-details-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Creates three columns */
+  gap: 16px; /* Optional: Adds spacing between items */
 }
 
-.form-container>h1 {
-  color: #333;
+.email-link {
+  position: relative;
+  display: inline-block;
 }
 
-.form-container form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.email-link:after {
+  content: "kajalraj1520@gmail.com"; /* Actual email content */
+  position: absolute;
+  left: 0;
+  top: 100%;
+  white-space: nowrap;
+  display: none;
 }
 
-.form-container label {
-  font-weight: bold;
+.email-link:hover:after {
+  display: inline-block; /* Show actual email on hover */
+  color: var(--black); /* Optional: Change color to make it stand out */
+  margin-top: 5px; /* Optional: Add spacing between the link and the actual email */
+}
+.phone-link {
+  position: relative;
+  display: inline-block;
 }
 
-.form-container input, textarea {
-  width: 100%;
-  padding: 20px;
-  margin: 5px 0;
-  border: 1px solid #ccc;
-  border-radius: 1.1rem;
+.phone-link:after {
+  content: "7370915507"; /* Actual email content */
+  position: absolute;
+  left: 0;
+  top: 100%;
+  white-space: nowrap;
+  display: none;
 }
 
-.form-container button {
-  background-color: #007BFF;
-  color: #fff;
-  border: none;
-  border-radius: 1.1rem;
-  padding: 10px 20px;
-  margin-top: 10px;
-  cursor: pointer;
+.phone-link:hover:after {
+  display: inline-block; /* Show actual email on hover */
+  color: var(--black); /* Optional: Change color to make it stand out */
+  margin-top: 5px; /* Optional: Add spacing between the link and the actual email */
 }
-
-.form-container button:hover {
-  background-color: #0056b3;
-} */
